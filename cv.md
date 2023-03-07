@@ -29,6 +29,7 @@ console.log('Hello, World!')
 * CV#2. HTML, CSS & Git Basics
 * Plants
 
+
 ### Education:
 * Brest State A. Pushkin University
 Jurisprudence (magistracy)
