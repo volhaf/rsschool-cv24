@@ -1,0 +1,410 @@
+*,
+*::before,*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+    font-family: Joan;
+    src: url("fonts/Joan-Regular.ttf");
+   }
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+body {
+    font-family: Joan;
+    width: 100%;
+}
+
+.navigation {
+    background-color: rgb(182, 162, 162);
+    width: 100%;
+}
+.navigation-list {
+    display: flex;
+    list-style: none;
+    font-size: 1.4em;
+    justify-content: flex-end; 
+    align-items: center;
+}
+.nav-link {
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+.nav-link:hover,
+.nav-link:focus {
+    color: rgb(182, 162, 162);;
+    background-color: white;
+}
+
+.conteiner-pr {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 30px 0px;
+    border-bottom: 10px solid rgb(182, 162, 162);
+}
+
+.profile-name {
+    color: rgb(237, 188, 12);
+}
+.name-title {
+    padding: 50px 0px 30px 0px;
+    font-size: 2.5em;
+}
+.name-subtitle {
+    font-size: 1.5em;
+}
+
+.image-avatar {
+    border-radius: 50%;
+}
+
+.conteiner-col {
+    display: flex;
+    justify-content: space-around;
+}
+.column1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+.column2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+.blok1 {
+    height: 150px;
+}
+.blok2 {
+    height: 200px;
+}
+.blok3 {
+    height: 200px;
+}
+.blok4 {
+    height: 200px;
+}
+
+div section:nth-child(4) {    
+    border: none; 
+}
+
+.document-section {
+    width: 100%;
+    margin: 10px;
+    border-bottom: 2px solid rgb(182, 162, 162);
+    font-size: 1em;
+    }
+
+h2 { 
+    color: rgb(237, 188, 12);
+}
+
+.contacts-item {
+    list-style: none;
+    margin-top: 10px;
+}
+.contacts-link  {
+    text-decoration: none;
+    padding-left: 10px;
+    list-style: none;
+    color: black; 
+    font-size: 1.1em;
+}
+.contacts-link:hover {
+    color: rgb(237, 188, 12);
+}
+
+.skills-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    
+}
+.skills-col2 {
+    display: flex;
+    width: 130px;
+    justify-content: space-around;
+    margin-left: 30px;
+
+}
+
+.skills-blok {
+    list-style: none;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+.skills-text {
+    padding-top: 6px;
+}
+
+.skills-item {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(237, 188, 12);
+    border-radius: 50%;
+    list-style: none;
+    margin-top: 20px;
+    transition: all .3s linear;
+}
+
+.skills-item:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+
+.skills-gray {
+    background-color: rgb(182, 162, 162);
+}
+
+.about-item {
+    margin-top: 10px;
+    color: black;
+    font-size: 1.1em;
+}
+
+
+.expierence-item {
+    list-style: none;
+    margin-top: 10px;
+}
+.expierence-link {
+    text-decoration: none;
+    list-style: none;
+    color: black; 
+    font-size: 1.1em;
+}
+
+.expierence-link:hover {
+    color: rgb(237, 188, 12);
+}
+
+
+
+
+.language-item {
+    list-style: none;
+    margin-top: 10px;
+    color: black;
+    font-size: 1.1em;
+}
+
+
+.language-list {
+    margin-top: 10px;
+}
+
+.code {
+    color: black;
+    font-size: 16px;
+    display: block;
+} 
+
+.hobbies-item {
+    padding-top: 5px;
+    color: black;
+    font-size: 1.1em;
+    list-style: none;
+}
+.hobbies-list {
+    margin-top: 10px;
+}
+
+.edukation-item {
+    list-style: none;
+    padding-top: 10px;
+    font-size: 1.1em;
+}
+
+.data {
+    background-color: rgb(237, 188, 12, 0.5);
+    border-radius: 5%;
+    display: block; 
+    width: 100px;
+}
+.footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color:rgb(182, 162, 162) ;
+}
+
+.footer-icon {
+    height: 30px;
+    color: white;
+}
+.footer-item {
+    font-size: 1.5em;
+}
+
+
+@media (max-width: 1200px) {
+    
+    .blok1 {
+        height: 200px;
+     
+    }
+    .blok4 {
+        height: 250px;
+    }
+    .navigation-list {
+        font-size: 1.1em;
+        justify-content: flex-start; 
+        align-items: center;
+}
+}
+
+@media (max-width: 992px) {
+    .navigation-list {
+        font-size: 1em; 
+    }
+
+    .name-title {
+        font-size: 2em; 
+    }
+    .name-subtitle {
+        font-size: 1.3em; 
+    }
+    .document-section {
+        font-size: 0.9em;
+    }
+    .code {
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 780px)  {
+    .conteiner-col {
+        display: block
+    }
+   .column1 {
+        width: 100%;
+   }
+   .column2 {
+    width: 100%;
+   }
+   div section:nth-child(4) {    
+    border-bottom: 2px solid rgb(182, 162, 162);}
+    .code {
+        width: 100%;
+        font-size: 1.3em;
+
+    }
+    .blok1,.blok2,.blok3,.blok4 {
+        font-size: 1.3em;
+        padding-left: 20px;
+    }
+
+    .skills-item {
+        list-style: none;
+        width: 0px;
+        height: 0px;
+    }
+    .contacts {
+        height: 190px;
+    }
+    .skills {
+        height: 250px;
+    }
+    .language {
+        height: 230px;
+    }
+    .hobbies {
+        height: 150px;
+    }
+    .expierence {
+        height: 180px;
+    }
+    .edukation-s {
+        height: 300px;
+        border-bottom: none;
+    }
+    .data {
+        background: none;
+        border-radius: 5%;
+        display: block;
+        width: 150px;
+    }
+    .navigation-list {
+        font-size: 0.8em; 
+    }
+}
+
+
+
+@media (max-width: 690px) {
+
+    .conteiner-nav {
+        display: none;
+    }
+    .conteiner-pr {
+        display: flex;
+        flex-direction: column-reverse;
+        border-bottom: 10px solid rgb(182, 162, 162);
+        width: 100%;
+        align-items: center;
+    }
+    .name-title {
+        font-size: 3em; 
+    }
+    .name-subtitle {
+        font-size: 2em;
+    }
+    .image-avatar {
+        border-radius: 50%;
+        width: 150px; }
+
+    .blok1,.blok2,.blok3,.blok4 {
+            font-size: 1em;
+            padding-left: 20px;
+    }
+    .contacts {
+        height: 150px;
+    }
+    .skills {
+        height: 200px;
+    }
+    .language {
+        height: 180px;
+    }
+    .about {
+        height: 150px;
+        border-top: 2px solid rgb(182, 162, 162);
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .hobbies {
+        height: 100px;
+    }
+    .expierence {
+        height: 130px;
+    }
+    .code {
+        hyphens: 130px;
+    }
+    .edukation-s {
+        height: 200px;
+    }
+    div section:nth-child(4) {    
+        border: none; 
+    }
+    .footer {
+        height: 40px;
+    }
+}
